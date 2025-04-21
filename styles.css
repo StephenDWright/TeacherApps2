@@ -3,29 +3,31 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Card styling for consistent appearance */
+/* Card styling for consistent appearance - dark mode compatible */
 .tw-card {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(249, 249, 249, 0.8);
     border-radius: 10px;
     margin-bottom: 20px;
     border-left: 4px solid #4a90e2;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    /* Ensure text is readable in both modes */
+    color: #2c3e50;
 }
 
-/* Card variations */
+/* Card variations with dark mode compatibility */
 .tw-card.info {
-    background-color: #eef3f8;
+    background-color: rgba(238, 243, 248, 0.9);
     border-left-color: #4a90e2;
 }
 
 .tw-card.success {
-    background-color: #eef8f3;
+    background-color: rgba(238, 248, 243, 0.9);
     border-left-color: #28a745;
 }
 
 .tw-card.warning {
-    background-color: #fff8e6;
+    background-color: rgba(255, 248, 230, 0.9);
     border-left-color: #ffc107;
 }
 
@@ -44,10 +46,10 @@ body {
 .tw-title {
     margin: 0;
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: inherit; /* Uses the text color from the theme */
 }
 
-/* Step header styling */
+/* Step header styling - dark mode compatible */
 .step-header {
     margin-bottom: 10px;
     font-size: 1.3rem;
@@ -69,12 +71,13 @@ button[kind="primary"]:hover {
     text-align: center;
     margin-top: 30px;
     padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(238, 238, 238, 0.2); /* Subtle in both modes */
 }
 
 .tw-footer p {
     font-size: 0.9rem;
-    color: #555;
+    color: inherit; /* Uses the text color from the theme */
+    opacity: 0.7;
 }
 
 /* Mobile responsiveness */
@@ -82,5 +85,29 @@ button[kind="primary"]:hover {
     .tw-header {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* Dark mode specific overrides */
+@media (prefers-color-scheme: dark) {
+    .tw-card {
+        background-color: rgba(40, 44, 52, 0.7);
+        color: #e6e6e6;
+    }
+    
+    .tw-card.info {
+        background-color: rgba(34, 47, 62, 0.8);
+    }
+    
+    .tw-card.success {
+        background-color: rgba(25, 52, 31, 0.8);
+    }
+    
+    .tw-card.warning {
+        background-color: rgba(58, 46, 24, 0.8);
+    }
+    
+    .step-header {
+        color: #e6e6e6;
     }
 }
