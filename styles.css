@@ -1,0 +1,86 @@
+/* Main typography and spacing */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling for consistent appearance */
+.tw-card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Card variations */
+.tw-card.info {
+    background-color: #eef3f8;
+    border-left-color: #4a90e2;
+}
+
+.tw-card.success {
+    background-color: #eef8f3;
+    border-left-color: #28a745;
+}
+
+.tw-card.warning {
+    background-color: #fff8e6;
+    border-left-color: #ffc107;
+}
+
+/* Header styling */
+.tw-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tw-logo {
+    width: 80px;
+}
+
+.tw-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+/* Step header styling */
+.step-header {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+.step-number {
+    color: #4a90e2;
+}
+
+/* Button styling */
+button[kind="primary"]:hover {
+    background-color: #005bb5 !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer styling */
+.tw-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.tw-footer p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .tw-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}

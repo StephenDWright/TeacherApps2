@@ -1,0 +1,44 @@
+{
+    "Communication Studies": {
+      "Centre_Name": "Centre_Name",
+      "Centre_Code": "Centre_Code",
+      "Candidate_Name": "Candidate_Name",
+      "Candidate_Number": "Candidate_Number",
+      "Topic": "Topic",
+      "Theme_Purpose": "Theme_Purpose",
+      "Treatment": "Treatment",
+      "Academic": "Academic",
+      "Work": "Work",
+      "Personal": "Personal",
+      "Issues_Challenges": "Issues_Challenges",
+      "Effects": "Effects",
+      "Organisation1": "Organisation1",
+      "Delivery": "Delivery",
+      "Preface": "Preface",
+      "Reflection": "Reflection",
+      "Content": "Content",
+      "Expression": "Expression",
+      "Organisation2": "Organisation2",
+      "Total": "Total",
+      "G1": "G1",
+      "G2": "G2",
+      "G3": "G3",
+      "Date": "Date"
+    },
+    "English A": {
+      "Centre_Name": "Centre_Name",
+      "Centre_Code": "Centre_Code",
+      "Candidate_Name": "Candidate_Name",
+      "Candidate_Number": "Candidate_Number",
+      "POI": "POI",
+      "PM": "PM",
+      "Group_Activity": "Group_Activity",
+      "Written_Report": "Written_Report",
+      "Reflection": "Reflection",
+      "Oral": "Oral",
+      "Total": "Total",
+      "Date": "Date"
+    },
+    "Economics": {}
+  }
+  
