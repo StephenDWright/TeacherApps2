@@ -22,11 +22,11 @@ with open("tw_logo.png", "rb") as image_file:
     </div>
     """, unsafe_allow_html=True)
 
-# Instructions card
+# Instructions card - using proper HTML for dark mode compatibility
 st.markdown("""
 <div class="tw-card">
-  <h4>🪜 How to Use This App</h4>
-  <ol style='padding-left: 1.2rem;'>
+  <h4 style="color: inherit;">🪜 How to Use This App</h4>
+  <ol style="padding-left: 1.2rem; color: inherit;">
     <li><b>📥 Download Templates:</b> Choose a level and subject to get the blank PDF + CSV.</li>
     <li><b>✍️ Fill Out CSV:</b> Enter student details and filenames using the template headers.</li>
     <li><b>✍️ Fill Out PDF:</b> Enter SIGNATURE and YEAR in the PDF Template.</li>       
@@ -41,7 +41,7 @@ st.divider()
 st.markdown("""
 <div class="tw-card info">
     <h4 class="step-header">📥 <span class="step-number">Step 1:</span> Select Subject and Download Templates</h4>
-    <p>This selection determines how the uploaded data will be processed.</p>
+    <p style="color: inherit;">This selection determines how the uploaded data will be processed.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -122,7 +122,7 @@ st.divider()
 st.markdown("""
 <div class="tw-card info">
     <h4 class="step-header">📤 <span class="step-number">Step 2:</span> Upload Filled Templates to Generate Coversheets</h4>
-    <p>Ensure your CSV and PDF match the selected subject's format above.</p>
+    <p style="color: inherit;">Ensure your CSV and PDF match the selected subject's format above.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -160,7 +160,7 @@ if csv_file and pdf_file:
                 st.markdown("""
                 <div class="tw-card success">
                     <h4 class="step-header">📥 <span class="step-number">Step 3:</span> Download Completed Cover Sheets</h4>
-                    <p>Press the button below to download all your generated coversheets.</p>
+                    <p style="color: inherit;">Press the button below to download all your generated coversheets.</p>
                 </div>
                 """, unsafe_allow_html=True)
 
